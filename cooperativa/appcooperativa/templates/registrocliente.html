@@ -1,0 +1,47 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/frmregistrocliente.css"%}' type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sectiondos">
+        <fieldset class="fi">
+       <form action="/login/cliente/" method="post" class="frm">
+         <legend>Título del formulario</legend>
+         <label for="d">Documento
+          <input type="text" id="d" name="documento">
+         </label>
+          
+         <label for="n">Nombres
+          <input type="text" id="n" name="nombre">
+         </label>
+
+         <label for="a">Apellido
+          <input type="text" id="a" name="apellido">
+         </label>
+        
+         <label for="e">Correo
+          <input type="email" id="e" name="correo">
+         </label>
+       
+         
+
+         <label class="" for="l">Celular
+          <input type="text" name="celular" id="">
+         </label>
+         
+         <input type="submit" value="Enviar">
+       </form>
+    
+        </fieldset>
+    
+       </section>
+       
+    
+</body>
+</html>
